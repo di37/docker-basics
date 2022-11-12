@@ -1,0 +1,22 @@
+{
+    "emp_details": [
+        {
+            "emp_id": 100,
+            "emp_name": "Steve Rogers",
+            "email": "steve.rogers1920@gmail.com",
+            "job_profile": "Veteran Superhero"
+        },
+        {
+            "emp_id": 101,
+            "emp_name": "Tony Stark",
+            "email": "stark_corp@gmail.com",
+            "job_profile": "Billionaire Superhero"
+        },
+        {
+            "emp_id": 102,
+            "emp_name": "Bruce Banner",
+            "email": "bruce_75@gmail.com",
+            "job_profile": "Scientist Superhero"
+        }
+    ]
+}

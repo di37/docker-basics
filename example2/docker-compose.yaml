@@ -3,5 +3,12 @@ services:
   pythonapp:
     image: fastapi-image
     ports:
-      - "80:80"
+      - "8000:80" #<local pc port: docker port specified in Dockerfile>
+    volumes:
+      - "./records.json:/code/records.json"
     restart: always
+  # pythonapp2:
+  #   image: fastapi-image
+  #   ports:
+  #     - "8001:80" 
+  #   restart: always
