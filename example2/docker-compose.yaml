@@ -1,6 +1,7 @@
 version: "3"
 services:
   pythonapp:
+    build: ./
     image: fastapi-image
     ports:
       - "8000:80" #<local pc port: docker port specified in Dockerfile>
