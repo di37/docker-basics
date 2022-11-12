@@ -75,3 +75,35 @@ docker ps
 ```bash
 docker exec -it myfastapicontainer </bin/sh or bash>
 ```
+
+## Create a docker compose yaml file.
+
+There will be situations where we would need to spin up multiple dockerfiles all at once. It would get messy in the bash to type down docker run commands. In this case, `docker-compose.yaml` file comes to the rescue.
+
+1 - Before running docker compose file, we do need to build image otherwise it will throw error.
+
+2 - Now, create a `docker-compose.yaml` file and include required details in YAML format.
+
+3 - To run the image.
+
+```bash
+sudo docker-compose.yaml up
+```
+
+4 - To run the image in the background.
+
+```bash
+sudo docker-compose.yaml up -d
+```
+
+5 - To stop running the container.
+
+```bash
+sudo docker-compose.yaml stop
+```
+
+6 - To stop and delete the container. The image will not be deleted. So we can normally run the image as above command and no need to build a new image.
+
+```bash
+sudo docker-compose.yaml down
+```
